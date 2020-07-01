@@ -11,7 +11,7 @@ abstract class AbstractGetter implements GetterInterface
     /**
      * @var GetterInterface|null
      */
-    private ?GetterInterface $nextGetter;
+    private ?GetterInterface $nextGetter = null;
 
     /**
      * @param GetterInterface $getter

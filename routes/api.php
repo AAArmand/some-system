@@ -14,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('api')->get('/exchange-rates', function (Request $request) {
-    return $request->user();
-});
+Route::get('/exchange-rates', 'ExchangeRate\ExchangeRateController@getActualRates');
